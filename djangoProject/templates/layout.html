@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %} 
+        {% comment %} title ham nay khud name dia hay ap kuch bhi day sakty ho {% endcomment %}
+        My block
+        {% endblock %} 
+        {% comment %} ya block override ho sakata hay aur ais may ham default value bhi day saktay hain  {% endcomment %}
+    </title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+<body>
+    
+    <nav>This is our navbar</nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

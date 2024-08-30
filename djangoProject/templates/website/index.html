@@ -1,17 +1,5 @@
 <!-- template folder may sari html files ati hain  -->
-{% load static %} 
-<!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chay aur Django</title>
-<link rel="stylesheet" href="{% static 'style.css' %}"> 
-<!-- asay hamin % % aur aus may static aur file name  -->
- </head>
- <body>
-    <h1>django programming</h1>
-    <script src="{% static 'script.js' %}"></script> 
-    <!-- ab hamari js files  bhi run kar rhi hain  -->
- </body>
- </html>
+{% extends "layout.html" %} 
+{% block title %}Home Page{% endblock %}
+{% block content %}Its our content area{% endblock %}
+{% comment %} ab ham yaha say title change kar sakty hian aur ager nahi kia to vaha pay default value di hoi hay  {% endcomment %}
