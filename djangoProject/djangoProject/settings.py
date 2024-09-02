@@ -38,7 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'fristApp',# ya ham nay apni app ka name day dia setting.py may
+    'tailwind',
+    'theme',
+    'django_browser_reload',
 ]
+#yaha hamin apni tailwind app ka name dana hota hay aur sath may internal IPS dani hoti hay Q kay ab ham 2 servers cahlin gay
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+NPM_BIN_PATH = "C://Program Files//nodejs//npm.cmd"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -48,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware', #ya bhi copy kia hay blog say ya hot reload package say hi install hoa hay 
 ]
 
 ROOT_URLCONF = 'djangoProject.urls'

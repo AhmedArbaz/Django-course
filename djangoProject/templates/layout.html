@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +13,7 @@
         {% comment %} ya block override ho sakata hay aur ais may ham default value bhi day saktay hain  {% endcomment %}
     </title>
     <link rel="stylesheet" href="{% static "style.css" %}">
+    {% tailwind_css %}
 </head>
 <body>
     

@@ -26,4 +26,7 @@ urlpatterns = [
     
     #ya ham apni urls.py app vali file jo same asis ko copy kar kay bani hay aus ko ham render kay liay main url.py may ay hain 1st import kia include ko then ab path dain gay
     path('firstApp/',include('fristApp.urls')),
+    
+     path("__reload__/", include("django_browser_reload.urls")),
+     #NOTE ya hamysha sab say nichy ay ga Q kay ya auto reload kara raha hota hay production may to ya hata datay hain
 ]
